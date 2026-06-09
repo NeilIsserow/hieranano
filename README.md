@@ -4,23 +4,11 @@
 
 # HieraNano
 
-HieraNano is a high-performance, minimalist architecture assistant built specifically for Puppet Enterprise to provide a simpoly way to work wioth Hiera and eyaml in your Puppet Enterprise environment. It is specifically built for teams as well as environments as a python/flask web app. All source code is provided for you to inspect and update to your requirements or even just use as a template to make it much better.
+HieraNano is a high-performance, minimalist architecture assistant built specifically for Puppet Enterprise to provide a simpoly way to work with Hiera and eyaml in your Puppet Enterprise environment. It is specifically built for teams as well as environments as a python/flask web app. All source code is provided for you to inspect and update to your requirements or even just use as a template to make it much better.
 
 ---
 
 
 ## Installation & Deployment
 
-HieraNano uses a master deployment layer script to configure its directory layout, SQLite schema, and WSGI execution engine.
-
-### 1. Provision Virtual Environment and Directory Roots
-Run the automated deployment helper script or configure your environment manually:
-```bash
-# Ensure dependencies are present
-sudo apt-get update && sudo apt-get install -y python3-pip python3-venv sqlite3 lsof
-
-# Verify the app path layout matches your service configurations
-mkdir -p /root/.hieranano
-cd /root/.hieranano
-python3 -m venv venv
-./venv/bin/pip install flask requests gunicorn
+Hieranano is provided as a single linux Bash script. Just execute the script and answer the questions and make sure you satisfy the requirements and you are good to go. Requirements include: pem private and public pkcs7 keys, hiera-eyaml, control-repo (git).
