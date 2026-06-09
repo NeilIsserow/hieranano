@@ -1023,7 +1023,6 @@ cat << 'EOF' > "$APP_DIR/templates/index.html"
                         <div class="d-flex justify-content-between mt-3 gap-2 flex-wrap">
                             <button type="button" class="btn btn-sm btn-outline-info" onclick="addNewGridRow()">➕ Add Property Entry</button>
                             <div class="d-flex gap-2">
-                                <a class="btn btn-sm btn-outline-secondary" href="?active={{ active_file | urlenc }}&view=raw{{ ("&token=" + access_token) if access_token else "" }}">📝 Edit Raw</a>
                                 <button type="submit" class="btn btn-sm btn-success px-4 fw-bold">💾 Save All</button>
                             </div>
                         </div>
